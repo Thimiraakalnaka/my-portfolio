@@ -1,10 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import {faLinkedin, faGithub, faDiscord} from '@fortawesome/free-brands-svg-icons';
 import Profile from '../Assest/profile.png';
 import Profile2 from '../Assest/profile2.png';
 import './style.css';
 import Typed from 'typed.js';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -33,12 +34,13 @@ export default function Home() {
                 <h1>Hi There,</h1>
                 <h1>I'm Thimira Akalanka</h1>
                 <h4>And I'm a <span ref={el}> </span></h4>
-                <p>The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles.</p>
+                <p>With the knowledge and skills, I have required, I like to work in a reputed organization where I could further enhance my creativity, knowledge and skills.</p>
                 <div className='social-media text-start'>
                     <a href='#'><FontAwesomeIcon icon={faLinkedin} /></a>
                     <a href='#'><FontAwesomeIcon icon={faGithub} /></a>
                     <a href='#'><FontAwesomeIcon icon={faDiscord} /></a>
                 </div>
+                <button class="btn btn-primary" style={{background:"#045C73"}} type="submit">Download CV <FontAwesomeIcon icon={faDownload} /></button>
             </div>
             
             <div className='home-img'>
@@ -51,9 +53,7 @@ export default function Home() {
             </div>
             <div className='about-content text-start'>
                 <h2 className='heading'>About <span>Me</span></h2>
-                <h3>Frontend Developer</h3>
-                <p>The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles.</p>
-                <a href='#' className='btn'>Read more</a>
+                <p>I am an optimistic & creative software engineer with a passion for technology and innovation. Skilled in HTML, CSS, and JavaScript, with experience in creating and maintaining responsive websites. And also, Experienced in the MERN stack (MongoDB, Express.js, React, Node.js) and am familiar with backend frameworks such as Spring Boot. Additionally, My background in data analysis and Machine Learning enhances my ability to tackle complex challenges. Experienced in incorporating version control tools like Git. Committed to continuous learning and applying best practices in web development. Seeking opportunities to contribute technical and grow as a software engineer in a collaborative development environment.</p>
             </div>
 
         </div>
