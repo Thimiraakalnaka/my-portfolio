@@ -58,6 +58,26 @@ export default function Home() {
 
         </div>
 
+        <div className='col d-flex justify-content-center align-items-center' style={{padding:"35px 10%"}}>
+          <div className='content text-start' style={{ padding:"0px 30px" ,borderLeft:"2px solid #1D6C81"}}>
+            <div className='box'>
+              <h4>2022 - 2024</h4>
+              <h4>Undergraduate In BSc (Hons) Software Engineering </h4>
+              <p>Cardiff Metropolitan University UK </p>
+            </div>
+            <div className='box'>
+              <h4>2020 - 2022</h4>
+              <h4>Higher Diploma In Computing and Software Engineering</h4>
+              <p>International College Of Business & Technology </p>
+            </div>
+            <div className='box'>
+              <h4>2019</h4>
+              <h4>UGC Advanced Level Examination - Physical Science</h4>
+              <p>Ananda Central College</p>
+            </div>
+          </div>
+        </div>
+
 
     </div>
   )
