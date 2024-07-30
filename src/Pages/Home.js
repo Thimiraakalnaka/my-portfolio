@@ -1,11 +1,15 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faLinkedin, faGithub, faDiscord} from '@fortawesome/free-brands-svg-icons';
+import {faLinkedin, faGithub, faDiscord, faJs, faJava} from '@fortawesome/free-brands-svg-icons';
 import Profile from '../Assest/profile.png';
 import Profile2 from '../Assest/profile2.png';
+import Js from '../Assest/Js.png';
+import Video from '../Assest/fp.mp4'
 import './style.css';
 import Typed from 'typed.js';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faJsfiddle } from '@fortawesome/free-brands-svg-icons/faJsfiddle';
+import ReactPlayer from 'react-player';
 
 
 
@@ -58,7 +62,9 @@ export default function Home() {
 
         </div>
 
-        <div className='col d-flex justify-content-center align-items-center' style={{padding:"35px 10%"}}>
+        <h2 className='mt-5'>Education</h2>
+        <div className='col d-flex justify-content-center align-items-center' id='education' style={{padding:"35px 10%"}}>
+          
           <div className='content text-start' style={{ padding:"0px 30px" ,borderLeft:"2px solid #1D6C81"}}>
             <div className='box'>
               <h4>2022 - 2024</h4>
@@ -78,6 +84,36 @@ export default function Home() {
           </div>
         </div>
 
+        {/* <div className='skill'>
+          <h2>Skill</h2>
+          <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
+            <img src={Js} alt='...'/>
+            <h5>Python</h5>
+            <a href='#'><FontAwesomeIcon icon={faJava} /></a>
+            <h5>Python</h5>
+            <a href='#'><FontAwesomeIcon icon={faJs} /></a>
+            <h5>Python</h5>
+          </div>
+        </div> */}
+
+        
+
+          <div className='row' id='project'>
+            <h2>Projects</h2>
+            <div className='col'>
+               <ReactPlayer controls={true} url={Video} height="500px" width="750px"/>
+            </div>
+            <div className='col text-start mt-5 lh-sm'>
+              <h2>LPL Forecast</h2>
+            <p>Lanka Premier League (LPL) cricket matches win probability predictor<br></br>
+                <br/>
+                This innovative project leverages advanced machine learning techniques to forecast match winning probability, providing valuable insights for sports enthusiasts, teams, and coaches.<br></br>
+                <br/>
+                I implemented these models using Python's libraries such as scikit-learn, numpy, pandas and evaluated their performance using accuracy. After thorough analysis, the Logistic Regression emerged as the most effective model for predicting LPL match outcomes. and also flask used for ML prediction backend.<br></br>
+                <br/>
+                The MERN stack (MongoDB, Express.js, React, and Node.js) was used to develop the user interface and backend of the user management, ensuring a seamless and responsive experience for users. This technology stack allows for robust data management and efficient real-time updates.</p>
+            </div>
+          </div> 
 
     </div>
   )

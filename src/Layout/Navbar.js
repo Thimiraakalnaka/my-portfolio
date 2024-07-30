@@ -14,16 +14,16 @@ export default function Navbar() {
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className="nav nav-pills ms-auto me-5 px-5">
             <li className="nav-item">
-              <a className="nav-link text-white me-5"  href="#scrollspyHeading1">Home</a>
+              <a className="nav-link text-white me-5"  href="#cover">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white me-5" href="#scrollspyHeading2">About</a>
+              <a className="nav-link text-white me-5" href="#about">About</a>
             </li>
             <li className="nav-item">
               <a className="nav-link text-white me-5" href="#scrollspyHeading1">Skill</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white me-5" href="#scrollspyHeading2">Education</a>
+              <a className="nav-link text-white me-5" href="#education">Education</a>
             </li>
             <li className="nav-item">
               <a className="nav-link text-white me-5" href="#scrollspyHeading2">Projects</a>
