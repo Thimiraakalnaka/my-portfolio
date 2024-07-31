@@ -4,12 +4,16 @@ import {faLinkedin, faGithub, faDiscord, faJs, faJava} from '@fortawesome/free-b
 import Profile from '../Assest/profile.png';
 import Profile2 from '../Assest/profile2.png';
 import Js from '../Assest/Js.png';
+import Git from '../Assest/git.png'
+import Python from '../Assest/python.png'
+import Java from '../Assest/java.png'
 import Video from '../Assest/fp.mp4'
 import './style.css';
 import Typed from 'typed.js';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faJsfiddle } from '@fortawesome/free-brands-svg-icons/faJsfiddle';
 import ReactPlayer from 'react-player';
+import Swal from 'sweetalert2'
 
 
 
@@ -31,6 +35,35 @@ export default function Home() {
       typed.destroy();
     };
   }, []);
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "cacc4ddc-d8a1-4af2-8718-c6a187434f67");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Succesfuly send the message!",
+        icon: "success"
+      });
+    }
+  };
+
+
   return (
     <div className='body'>
         <div className='cover' id='cover'>
@@ -85,20 +118,108 @@ export default function Home() {
         </div>
 
         {/* <div className='skill'>
-          <h2>Skill</h2>
-          <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3'>
+          <h2 className='mb-5'>Skill</h2>
+          <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3 '>
+            <div className='skillcontent d-flex flex-row'>
             <img src={Js} alt='...'/>
-            <h5>Python</h5>
-            <a href='#'><FontAwesomeIcon icon={faJava} /></a>
-            <h5>Python</h5>
-            <a href='#'><FontAwesomeIcon icon={faJs} /></a>
-            <h5>Python</h5>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>javaScript</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            <div className='skillcontent d-flex flex-row'>
+            <img src={Js} alt='...'/>
+            <h3 className='text-center mt-3'>java</h3>
+            </div>
+            
+            
           </div>
         </div> */}
 
+        <h2>Skill</h2>
+        <div className='container'>
+          
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Js} alt='...'/>
+            </div>
+              <h5>javaScript</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Git} alt='...'/>
+            </div>
+              <h5>Git</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Python} alt='...'/>
+            </div>
+              <h5>Python</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Java} alt='...'/>
+            </div>
+              <h5>Java</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Git} alt='...'/>
+            </div>
+              <h5>Git</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Python} alt='...'/>
+            </div>
+              <h5>Python</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Java} alt='...'/>
+            </div>
+              <h5>Java</h5>
+          </div>
+          
+        </div>
+
         
 
-          <div className='row' id='project'>
+          <div className='row mt-5' id='project'>
             <h2>Projects</h2>
             <div className='col'>
                <ReactPlayer controls={true} url={Video} height="500px" width="750px"/>
@@ -114,6 +235,28 @@ export default function Home() {
                 The MERN stack (MongoDB, Express.js, React, and Node.js) was used to develop the user interface and backend of the user management, ensuring a seamless and responsive experience for users. This technology stack allows for robust data management and efficient real-time updates.</p>
             </div>
           </div> 
+
+        <div className='contact px-5 py-2 text-start '>
+          <h3>Contact</h3>
+          <form onSubmit={onSubmit}>
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label ">Name</label>
+                <input type="text" className="form-control" name='name' required/>
+              </div>
+              <div className="mb-3">
+                <label for="exampleFormControlInput2" className="form-label ">Email address</label>
+                <input type="email" className="form-control"placeholder="name@example.com" name='email'/>
+              </div>
+              <div className="mb-3">
+                <label for="exampleFormControlTextarea1" className="form-label">Message</label>
+                <textarea name='message' className="form-control" rows="6"></textarea>
+              </div>
+              <div className='d-grid my-3'>
+                <button type="submit" className="btn btn-info text-white">Submit</button>
+              </div>
+            </form>  
+        </div>
+      
 
     </div>
   )

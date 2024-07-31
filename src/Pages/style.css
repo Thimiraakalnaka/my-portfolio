@@ -110,6 +110,8 @@ span{
 .about-content p{
     font-size: 1.4rem;
     margin: 2rem 0 3rem;
+    text-align: justify;
+    padding-right: 20px;
 }
 
 .col .content .box{
@@ -141,15 +143,82 @@ span{
     border: 2px solid #1D6C81;
 }
 
-.skill .box-img{
+.row .col p{
+    text-align: justify;
+}
+
+.skill{
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: #045C73;
     border-radius: 20px;
 }
 
-.skill .box-img img{
-    width: 100px;
-    height: 60px;
-    background-color: #1B3B43;
-    border-radius: 20px;
+.skill img{
+    width:100px;
+    height: auto;
 }
 
+.skill .row .skillcontent{
+    background-color: #1B3B43;
+    border-radius: 10px;
+    border: 2px solid #1D6C81;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    align-items: start;
+}
+
+.skill .row .skillcontent:hover{
+    box-shadow: 0 0 1rem var(--text-color);
+    border: 1px solid transparent;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+.container .box{
+    background-color: #1B3B43;
+    border-radius: 10px;
+    border: 2px solid #1D6C81;
+    width: 125px;
+    height: 125px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding: center;
+    color:#00B4D8;
+    
+    
+}
+
+.container .box .skill-img img{
+    width: 125px;
+    height: 125px;
+}
+
+.container .box:hover{
+    box-shadow: 0 0 1rem var(--text-color);
+    border: 1px solid transparent;
+}
+
+.contact{
+    background-color: #034051;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    
+}
+
+.contact h3{
+    text-align: center;
+}

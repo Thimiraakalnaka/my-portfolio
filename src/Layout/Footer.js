@@ -4,7 +4,7 @@ import {faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-ico
 
 export default function Footer() {
   return (
-    <footer className='bg-dark text-white pt-1'>
+    <footer className='text-white pt-1' style={{background:"#034051"}}>
         
         <div className='row mt-5 '> 
             <div className='col'>
