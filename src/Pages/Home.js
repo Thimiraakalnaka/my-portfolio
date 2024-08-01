@@ -3,10 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLinkedin, faGithub, faDiscord, faJs, faJava} from '@fortawesome/free-brands-svg-icons';
 import Profile from '../Assest/profile.png';
 import Profile2 from '../Assest/profile2.png';
-import Js from '../Assest/Js.png';
+import Js from '../Assest/js.png';
 import Git from '../Assest/git.png'
 import Python from '../Assest/python.png'
 import Java from '../Assest/java.png'
+import Figma from '../Assest/Figma-01.png'
+import Html from '../Assest/HTML5.png'
+import Css from '../Assest/css.png'
+import Mysql from '../Assest/sql_logo.png'
+import Springboot from '../Assest/sb.png'
+import Boostrap from '../Assest/bs.png'
+import Reacticon from '../Assest/react.png'
+import Mongodbicon from '../Assest/mdb.png'
 import Video from '../Assest/fp.mp4'
 import './style.css';
 import Typed from 'typed.js';
@@ -117,78 +125,26 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div className='skill'>
-          <h2 className='mb-5'>Skill</h2>
-          <div className='row row-cols-2 row-cols-lg-5 g-2 g-lg-3 '>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>javaScript</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            <div className='skillcontent d-flex flex-row'>
-            <img src={Js} alt='...'/>
-            <h3 className='text-center mt-3'>java</h3>
-            </div>
-            
-            
-          </div>
-        </div> */}
 
         <h2>Skill</h2>
         <div className='container'>
-          
+        <div className='box'>
+            <div className='skill-img'>
+              <img src={Html} alt='...'/>
+            </div>
+              <h5>HTML</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Css} alt='...'/>
+            </div>
+              <h5>CSS</h5>
+          </div>
           <div className='box'>
             <div className='skill-img'>
               <img src={Js} alt='...'/>
             </div>
-              <h5>javaScript</h5>
-          </div>
-          <div className='box'>
-            <div className='skill-img'>
-              <img src={Git} alt='...'/>
-            </div>
-              <h5>Git</h5>
-          </div>
-          <div className='box'>
-            <div className='skill-img'>
-              <img src={Python} alt='...'/>
-            </div>
-              <h5>Python</h5>
+              <h5>JavaScript</h5>
           </div>
           <div className='box'>
             <div className='skill-img'>
@@ -198,22 +154,55 @@ export default function Home() {
           </div>
           <div className='box'>
             <div className='skill-img'>
-              <img src={Git} alt='...'/>
-            </div>
-              <h5>Git</h5>
-          </div>
-          <div className='box'>
-            <div className='skill-img'>
               <img src={Python} alt='...'/>
             </div>
               <h5>Python</h5>
           </div>
           <div className='box'>
             <div className='skill-img'>
-              <img src={Java} alt='...'/>
+              <img src={Mysql} alt='...'/>
             </div>
-              <h5>Java</h5>
+              <h5>Mysql</h5>
           </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Mongodbicon} alt='...'/>
+            </div>
+              <h5>MongoDB</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Git} alt='...'/>
+            </div>
+              <h5>Git</h5>
+          </div>
+  
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Figma} alt='...'/>
+            </div>
+              <h5>Figma</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Boostrap} alt='...'/>
+            </div>
+              <h5>Boostrap</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Reacticon} alt='...'/>
+            </div>
+              <h5>React</h5>
+          </div>
+          <div className='box'>
+            <div className='skill-img'>
+              <img src={Springboot} alt='...'/>
+            </div>
+              <h5>Springboot</h5>
+          </div>
+          
+          
           
         </div>
 
