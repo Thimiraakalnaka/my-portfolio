@@ -127,7 +127,7 @@ export default function Home() {
 
 
         <h2>Skill</h2>
-        <div className='container'>
+        <div className='container' id='skill'>
         <div className='box'>
             <div className='skill-img'>
               <img src={Html} alt='...'/>
@@ -225,7 +225,7 @@ export default function Home() {
             </div>
           </div> 
 
-        <div className='contact px-5 py-2 text-start '>
+        <div className='contact px-5 py-2 text-start ' id='contact'>
           <h3>Contact</h3>
           <form onSubmit={onSubmit}>
               <div className="mb-3">

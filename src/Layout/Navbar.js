@@ -20,16 +20,16 @@ export default function Navbar() {
               <a className="nav-link text-white me-5" href="#about">About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white me-5" href="#scrollspyHeading1">Skill</a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link text-white me-5" href="#education">Education</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white me-5" href="#scrollspyHeading2">Projects</a>
+              <a className="nav-link text-white me-5" href="#skill">Skill</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white me-5" href="#scrollspyHeading2">Contact</a>
+              <a className="nav-link text-white me-5" href="#project">Projects</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-white me-5" href="#contact">Contact</a>
             </li>
     
           </ul>
