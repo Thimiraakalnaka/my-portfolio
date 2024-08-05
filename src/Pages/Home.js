@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faLinkedin, faGithub, faDiscord, faJs, faJava} from '@fortawesome/free-brands-svg-icons';
+import {faLinkedin, faGithub, faDiscord} from '@fortawesome/free-brands-svg-icons';
 import Profile from '../Assest/profile.png';
 import Profile2 from '../Assest/profile2.png';
 import Js from '../Assest/js.png';
@@ -19,7 +19,6 @@ import Video from '../Assest/fp.mp4'
 import './style.css';
 import Typed from 'typed.js';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { faJsfiddle } from '@fortawesome/free-brands-svg-icons/faJsfiddle';
 import ReactPlayer from 'react-player';
 import Swal from 'sweetalert2'
 
@@ -74,22 +73,31 @@ export default function Home() {
 
   return (
     <div className='body'>
-        <div className='cover' id='cover'>
-            <div className='cover-content text-start'>
-                <h1>Hi There,</h1>
-                <h1>I'm Thimira Akalanka</h1>
-                <h4>And I'm a <span ref={el}> </span></h4>
-                <p>With the knowledge and skills, I have required, I like to work in a reputed organization where I could further enhance my creativity, knowledge and skills.</p>
-                <div className='social-media text-start'>
-                    <a href='#'><FontAwesomeIcon icon={faLinkedin} /></a>
-                    <a href='#'><FontAwesomeIcon icon={faGithub} /></a>
-                    <a href='#'><FontAwesomeIcon icon={faDiscord} /></a>
+        <div className="container-fluid" id="cover">
+            <div className="row align-items-center">
+                <div className="col-8 text-start" id='cover'>
+                    <h1>Hi There,</h1>
+                    <h1>I'm Thimira Akalanka</h1>
+                    <h4>And I'm a <span ref={el}></span></h4>
+                    <p>With the knowledge and skills I have acquired, I would like to work in a reputed organization where I could further enhance my creativity, knowledge, and skills.</p>
+                    <div className="social-media text-start">
+                        <a href="https://www.linkedin.com/in/thimira-akalanka-194bbb275" className="me-3">
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                        <a href="https://github.com/Thimiraakalnaka" className="me-3">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                        <a href="#">
+                            <FontAwesomeIcon icon={faDiscord} />
+                        </a>
+                    </div>
+                    <button className="btn btn-primary mt-3 mb-5" style={{ background: "#045C73" }} type="button">
+                        Download CV <FontAwesomeIcon icon={faDownload} />
+                    </button>
                 </div>
-                <button class="btn btn-primary" style={{background:"#045C73"}} type="submit">Download CV <FontAwesomeIcon icon={faDownload} /></button>
-            </div>
-            
-            <div className='home-img'>
-                <img src={Profile} alt="..."/>
+                <div className="d-grid col-4 text-center">
+                    <img src={Profile} alt="..." className="img-fluid" />
+                </div>
             </div>
         </div>
         <div className='about' id='about'>
@@ -127,7 +135,7 @@ export default function Home() {
 
 
         <h2>Skill</h2>
-        <div className='container' id='skill'>
+        <div className='container ' id='skill'>
         <div className='box'>
             <div className='skill-img'>
               <img src={Html} alt='...'/>
@@ -208,22 +216,38 @@ export default function Home() {
 
         
 
-          <div className='row mt-5' id='project'>
-            <h2>Projects</h2>
-            <div className='col'>
-               <ReactPlayer controls={true} url={Video} height="500px" width="750px"/>
+ 
+        <h2 className='title mt-5'><span>My </span>Projects</h2>
+        <div className="container mt-2" id="project">
+            <div className="row">
+                <div className="col-md-6">
+                    <div className="player-wrapper">
+                        <ReactPlayer
+                            className="react-player"
+                            controls={true}
+                            url={Video}
+                            width="100%"
+                            height="100%"
+                        />
+                    </div>
+                </div>
+                <div className="col-md-6 text-start mt-2 lh-sm">
+                    <h2>LPL Forecast</h2>
+                    <p>
+                        Lanka Premier League (LPL) cricket matches win probability predictor
+                        <br />
+                        <br />
+                        This innovative project leverages advanced machine learning techniques to forecast match winning probability, providing valuable insights for sports enthusiasts, teams, and coaches.
+                        <br />
+                        <br />
+                        I implemented these models using Python's libraries such as scikit-learn, numpy, pandas and evaluated their performance using accuracy. After thorough analysis, the Logistic Regression emerged as the most effective model for predicting LPL match outcomes. Flask was used for the ML prediction backend.
+                        <br />
+                        <br />
+                        The MERN stack (MongoDB, Express.js, React, and Node.js) was used to develop the user interface and backend of the user management, ensuring a seamless and responsive experience for users. This technology stack allows for robust data management and efficient real-time updates.
+                    </p>
+                </div>
             </div>
-            <div className='col text-start mt-5 lh-sm'>
-              <h2>LPL Forecast</h2>
-            <p>Lanka Premier League (LPL) cricket matches win probability predictor<br></br>
-                <br/>
-                This innovative project leverages advanced machine learning techniques to forecast match winning probability, providing valuable insights for sports enthusiasts, teams, and coaches.<br></br>
-                <br/>
-                I implemented these models using Python's libraries such as scikit-learn, numpy, pandas and evaluated their performance using accuracy. After thorough analysis, the Logistic Regression emerged as the most effective model for predicting LPL match outcomes. and also flask used for ML prediction backend.<br></br>
-                <br/>
-                The MERN stack (MongoDB, Express.js, React, and Node.js) was used to develop the user interface and backend of the user management, ensuring a seamless and responsive experience for users. This technology stack allows for robust data management and efficient real-time updates.</p>
-            </div>
-          </div> 
+        </div>
 
         <div className='contact px-5 py-2 text-start ' id='contact'>
           <h3>Contact</h3>

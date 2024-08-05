@@ -20,24 +20,24 @@
     background: var(--bg-color);
     color: var(--text-color);
     min-height: 100vh;
-    padding: 3rem 9% 2rem;
+    padding: 5rem 9% 2rem;
 }
 
-.cover{
+/* #cover{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.cover-content h1{
+#cover h1{
     font-size: 3rem;
     font-weight: 700;
 }
 
-.cover-content h4:nth-of-type(2){
+#cover h4:nth-of-type(2){
     margin-bottom: 2rem;
-}
+} */
 
 span{
     color: var(--main-color);
@@ -47,6 +47,16 @@ span{
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
 }
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  }
+  
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
 @keyframes floatImage {
     0%{
@@ -143,7 +153,7 @@ span{
     border: 2px solid #1D6C81;
 }
 
-.row .col p{
+.row .col-md-6 p{
     text-align: justify;
 }
 
@@ -180,7 +190,7 @@ span{
 .container{
     display: flex;
     flex-wrap: wrap;
-
+    line-height: 10px;
     
 }
 
@@ -221,4 +231,234 @@ span{
 
 .contact h3{
     text-align: center;
+}
+
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    #cover h1 {
+        font-size: 2rem;
+    }
+
+    #cover h4 {
+        font-size: 1.2rem;
+    }
+
+    #cover p {
+        font-size: 1rem;
+    }
+
+    .home-img img {
+        width: 30vw;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 5%;
+    }
+
+    .about-img img {
+        width: 20vw;
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+
+    .col .content .box::before {
+        right: calc(100% + 12px);
+        top: 35px;
+    }
+
+    .content h2, .content h4, .content p {
+        font-size: 0.9rem;
+    }
+
+    .container .box h5{
+        font-size: 0.8rem;
+    }
+
+    .row .col-md-6 p{
+        font-size: 0.8rem;
+    }
+    .row .col-md-6 h2{
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    /* #cover {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } */
+
+    #cover h1 {
+        font-size: 1.5rem;
+    }
+
+    #cover h4 {
+        font-size: 1rem;
+    }
+
+    #cover p {
+        font-size: 0.9rem;
+    }
+
+    .home-img img {
+        width: 40vw;
+    }
+
+    .about-img img {
+        width: 30vw;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+    }
+
+    .social-media a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    .col .content .box {
+        padding: 10px;
+    }
+
+    .col .content .box::before {
+        top: 25px;
+    }
+
+    .container .box {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .container .box .skill-img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .content h2, .content h4, .content p {
+        font-size: 0.8rem;
+    }
+
+    .container .box h5{
+        font-size: 0.6rem;
+    }
+    
+    .contact {
+        width: 95%;
+        margin: auto;
+    }
+
+    .contact h3 {
+        font-size: 1.2rem;
+    }
+    .row .col-md-6 p{
+        font-size: 0.6rem;
+    }
+    .row .col-md-6 h2{
+        font-size: 1.5rem;
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+    /* #cover {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } */
+
+    #cover h1 {
+        font-size: 1.2rem;
+    }
+
+    #cover h4 {
+        font-size: 0.8rem;
+    }
+
+    #cover p {
+        font-size: 0.8rem;
+    }
+
+    .home-img img {
+        width: 50vw;
+    }
+
+    .about-img img {
+        width: 40vw;
+    }
+
+    .about-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-content p {
+        font-size: 0.8rem;
+    }
+
+    .social-media a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .col .content .box {
+        padding: 5px;
+    }
+
+    .col .content .box::before {
+        top: 15px;
+    }
+
+    .container .box {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+
+    .container .box .skill-img img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .content h2, .content h4, .content p {
+        font-size: 0.7rem;
+    }
+
+    .container .box h5{
+        font-size: 0.4rem;
+    }
+    
+    .contact h3 {
+        font-size: 1rem;
+    }
+
+    .row .col-md-6 p{
+        font-size: 0.4rem;
+    }
+    .row .col-md-6 h2{
+        font-size: 1.2rem;
+    }
 }
