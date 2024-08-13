@@ -21,7 +21,7 @@ import Typed from 'typed.js';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import ReactPlayer from 'react-player';
 import Swal from 'sweetalert2'
-
+import Cv from '../Assest/Thimira Akalanka CV.pdf'
 
 
 
@@ -92,7 +92,7 @@ export default function Home() {
                         </a>
                     </div>
                     <button className="btn btn-primary mt-3 mb-5" style={{ background: "#045C73" }} type="button">
-                        Download CV <FontAwesomeIcon icon={faDownload} />
+                      <a href={Cv} download='resume.pdf' style={{ textDecoration: "none", color: "inherit" }}> Download CV <FontAwesomeIcon icon={faDownload} /></a> 
                     </button>
                 </div>
                 <div className="d-grid col-4 text-center">
