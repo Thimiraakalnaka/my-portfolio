@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.82ad6ae4.css",
-    "main.js": "/my-portfolio/static/js/main.21c77db0.js",
+    "main.js": "/my-portfolio/static/js/main.c5e27914.js",
     "reactPlayerYouTube.js": "/my-portfolio/static/js/reactPlayerYouTube.ab84ff7c.chunk.js",
     "reactPlayerSoundCloud.js": "/my-portfolio/static/js/reactPlayerSoundCloud.bfeb94f2.chunk.js",
     "reactPlayerVimeo.js": "/my-portfolio/static/js/reactPlayerVimeo.5eff4268.chunk.js",
@@ -29,12 +29,13 @@
     "static/media/HTML5.png": "/my-portfolio/static/media/HTML5.a486aefef3cfe4d130df.png",
     "static/media/mdb.png": "/my-portfolio/static/media/mdb.a5448258ecf2f35492d6.png",
     "static/media/react.png": "/my-portfolio/static/media/react.647d013a17024a087e11.png",
+    "static/media/Thimira Akalanka CV.pdf": "/my-portfolio/static/media/Thimira Akalanka CV.08a6bdd73fe4fafd906c.pdf",
     "static/media/css.png": "/my-portfolio/static/media/css.adfc9581ba1ad85f0818.png",
     "static/media/sql_logo.png": "/my-portfolio/static/media/sql_logo.85f3a4a8f84d761ca334.png",
     "static/media/Figma-01.png": "/my-portfolio/static/media/Figma-01.d1390b24f26c01a12f20.png",
     "index.html": "/my-portfolio/index.html",
     "main.82ad6ae4.css.map": "/my-portfolio/static/css/main.82ad6ae4.css.map",
-    "main.21c77db0.js.map": "/my-portfolio/static/js/main.21c77db0.js.map",
+    "main.c5e27914.js.map": "/my-portfolio/static/js/main.c5e27914.js.map",
     "reactPlayerYouTube.ab84ff7c.chunk.js.map": "/my-portfolio/static/js/reactPlayerYouTube.ab84ff7c.chunk.js.map",
     "reactPlayerSoundCloud.bfeb94f2.chunk.js.map": "/my-portfolio/static/js/reactPlayerSoundCloud.bfeb94f2.chunk.js.map",
     "reactPlayerVimeo.5eff4268.chunk.js.map": "/my-portfolio/static/js/reactPlayerVimeo.5eff4268.chunk.js.map",
@@ -53,6 +54,6 @@
   },
   "entrypoints": [
     "static/css/main.82ad6ae4.css",
-    "static/js/main.21c77db0.js"
+    "static/js/main.c5e27914.js"
   ]
 }
